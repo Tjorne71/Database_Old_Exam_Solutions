@@ -323,3 +323,57 @@ D --> A
 _Normalize R to the highest possible normal form (3NF or BCNF), based on functional dependencies, while allowing all functional dependencies (excluding trivial, unavoidable, and derivable dependencies) to be checked within a single relation. For each resulting relation, write its columns and clearly indicate whether it is in BCNF._
 
 - No decomposition, the relation is already in BCNF.
+
+## From Exercises
+
+**Exercise 19.7** Suppose you are given a relation R with four attributes ABCD. For each of the following sets of FDs, assuming those are the only dependencies that hold for R, do the following: (a) Identify the candidate key(s) for R. (b) Identify the best normal form that R satisfies (1NF, 2NF, 3NF, or BCNF). (c) If R is not in BCNF, decompose it into a set of BCNF relations that preserve the dependencies.
+
+**1. C→D, C→A, B→C**
+
+![Normalization](images/EX1.jpeg)
+
+(a) Candidate keys: B
+
+(b) R is in 2NF but not 3NF.
+
+(c) C → D and C → A both cause violations of BCNF. One way to obtain a (lossless) join preserving decomposition is to decompose R into AC, BC, and CD.
+
+**2. B→C, D→A**
+
+![Normalization](images/EX2.jpeg)
+
+(a) Candidate keys: BD
+
+(b) R is in 1NF but not 2NF.
+
+(c) Both B → C and D → A cause BCNF violations. The decomposition: AD, BC, BD (obtained by first decomposing to AD, BCD) is BCNF and lossless and join-preserving.
+
+**3. ABC→D, D→A**
+
+![Normalization](images/EX3.jpeg)
+
+(a) Candidate keys: ABC, BCD
+
+(b) R is in 3NF but not BCNF.
+
+(c) ABCDisnotinBCNFsinceD→AandDisnotakey. Howeverifwesplit up R as AD, BCD we cannot preserve the dependency ABC → D. So there is no BCNF decomposition.
+
+**4. A→B,BC→D,A→C**
+
+![Normalization](images/EX4.jpeg)
+
+(a) Candidate keys: A
+
+(b) R is in 2NF but not 3NF(becauseoftheFD:BC→D).
+
+(c) BC → D violates BCNF since BC does not contain a key. So we split up R as in: BCD, ABC.
+
+**5. AB→C, AB→D, C→A, D→B**
+
+![Normalization](images/EX5.jpeg)
+
+(a) Candidate keys: AB, BC, CD, AD
+
+(b) R is in 3NF but not BCNF (because of the FD: C→A and D→B).
+
+(c) C → A and D → B both cause violations. So decompose into: AC, BCD but this does not preserve AB → C and AB → D, and BCD is still not BCNF because D → B. So we need to decompose further into: AC, BD, CD. However, when we attempt to revive the lost functioanl dependencies by adding ABC and ABD, we that these relations are not in BCNF form. Therefore, there is no BCNF decomposition.
