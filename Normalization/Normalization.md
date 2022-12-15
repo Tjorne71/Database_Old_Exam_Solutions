@@ -358,6 +358,56 @@ _Normalize R to the highest possible normal form (3NF or BCNF), based on functio
 
 - No decomposition, the relation is already in BCNF.
 
+## Maj 2019
+
+**a) Consider a table R(A;B;C;D;E) with the following dependencies:**
+
+AB --> CDE
+
+A --> E
+
+B --> D
+
+D --> C
+
+![Normalization](images/May2019_1.jpeg)
+
+(a) AB is the only key of R. (50%)
+
+(b) B --> D is an unavoidable functional dependency. (0%)
+
+(c) Normalizing to BCNF results in exactly two relations. (0%)
+
+(d) The relation Z(A;B;C) is in BCNF. (50%)
+
+**b) Consider a table R(A;B;C;D;E) with the following dependencies:**
+
+CD --> AB
+
+ADE --> E
+
+A --> E
+
+AB --> ABCDE
+
+(a) AB is the only key of R. (0%)
+
+(b) ADE --> E is a trivial functional dependency. (33:33333%)
+
+(c) Normalizing to 3NF or BCNF results in exactly two relations. (33:33333%)
+
+**(d) The relation Z(A;B;C;D) is in BCNF. (33:33333%)** (Dont Trust)
+
+c) Consider a table R(A;B;C;D;E) with the following dependencies:
+
+A --> D
+
+DE --> ABC
+
+C --> B
+
+A --> A
+
 ## From Exercises
 
 **Exercise 19.7** Suppose you are given a relation R with four attributes ABCD. For each of the following sets of FDs, assuming those are the only dependencies that hold for R, do the following: (a) Identify the candidate key(s) for R. (b) Identify the best normal form that R satisfies (1NF, 2NF, 3NF, or BCNF). (c) If R is not in BCNF, decompose it into a set of BCNF relations that preserve the dependencies.
