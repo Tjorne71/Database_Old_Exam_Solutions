@@ -635,3 +635,51 @@ create table observes (
 	primary key (SID, YPID, APID)
 );
 ```
+
+## December 2019
+
+![Er Diagram](images/December2019.png)
+
+(a) All civilians have been arrested. (50%)
+
+(b) All policemen have made an arrest. (0%)
+
+(c) Every civilian is linked to at least one politician via the relationships. (50%)
+
+(d) Civilians can be mistreated multiple times. (0%)
+
+(e) When converted to SQL DDL according to the methodology presented in class, the resulting database should have exactly 8 tables. (0%)
+
+(f) When converted to SQL DDL, the table for the Bribes relationship will have a primary key with two attributes. (0%)
+
+## May 2019
+
+![Er Diagram](images/May2019.png)
+
+(a) Every E2 entity must participate in R1. (0%)
+
+(b) An E1 entity is always indirectly related to some E4 entity through R1, R2 and R3. (50%)
+
+(c) Every E3 has one corresponding E5 entity. (0%)
+
+(d) The key for a table created for relationship R3 would contain the attributes E1ID, E2ID, E3ID and E4ID. (0%)
+
+(e) The key for a table created for entity E5 would contain the attributes E3ID and E5ID. (50%)
+
+(f) A table created for relationship R2 would have a foreign key to the table for entity E1. (0%)
+
+![Er Diagram](images/May2019_2.png)
+
+**b) The ER diagram in  gure 2 shows a simple volleyball database. Select the true statements. You should base your answer only on what data is allowed and not allowed by the ER diagram:**
+
+(a) Every team can play every other team only once. (0%)
+
+(b) Each match has exactly one home team. (33:33333%)
+
+(c) Only registered teams can play in a match. (0%)
+
+(d) A match has exactly one set. (0%)
+
+(e) A guest team can have the same name as a registered team. (33:33333%)
+
+(f) No information indicates which team wins each match. (33:33333%)
