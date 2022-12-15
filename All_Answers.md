@@ -4,7 +4,9 @@
 
 [Sql Programming](Sql_programming/Sql_programming.md)
 
-[ER Diagram](Er_Diagrams/Er_Diagrams.md)
+[Reading And DDl From ER-Diagrams](Reading_And_DDl_From_Er_Diagrams/Reading_And_DDl_From_Er_Diagrams.md)
+
+[Drawing, ER-Diagram](Drawing_Er_Diagrams/Drawing_Er_Diagrams.md)
 
 [Normalization](Normalization/Normalization.md)
 

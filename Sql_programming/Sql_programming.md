@@ -4,7 +4,7 @@
 
 ## August 2022
 
-[Sql Programming](Images/August2022.png)
+![Sql Programming](images/August2022.png)
 
 (a) Check 1 can be replaced by a CHECK constraint on the BasicService relation. (33.33333%)
 
@@ -18,7 +18,7 @@
 
 ## Maj 2022
 
-[Sql Programming](Images/Maj2022.png)
+![Sql Programming](images/Maj2022.png)
 
 (a) Check 1 can be replaced by a CHECK constraint on the Audits relation. (50%)
 
@@ -28,9 +28,21 @@
 
 (d) The fourth INSERT statement will raise an error. (−50%)
 
+## March 2022
+
+![Sql Programming](images/March2022.png)
+
+(a) The trigger is incorrectly implemented as an ‘AFTER’ trigger. (−50%)
+
+(b) The INSERT statement will succeed in adding a row to the LogExtremeTests relation. (50%)
+
+(c) The data in the LogExtremeTests relation is sufficient to allow a competent SQL programmer to find the variant detected and the kit used. (50%)
+
+(d) As this is an AFTER trigger, adding code that rejects tests based on data values (e.g., because they are older than one week) would not work. (−50%)
+
 ## December 2021
 
-![Sql Programming Question](Images/December2021.png)
+![Sql Programming Question](images/December2021.png)
 
 (a) The trigger prevents negative quantity values from entering the relation. (−33.33333%) _Because it is an after and not a before trigger_
 
@@ -44,7 +56,7 @@
 
 ## August 2021
 
-![Sql Programming Question](Images/August2021.png)
+![Sql Programming Question](images/August2021.png)
 
 (a) Check 1 can be replaced by a CHECK constraint on the plantedin table. (33:33333%)
 
@@ -132,7 +144,7 @@
 
 ## Maj 2020
 
-[Sql Programming](Images/Maj2020.png)
+![Sql Programming](Images/Maj2020.png)
 
 (a) Check 1 can be replaced by a constraint on the TeamsInDivisions relation. (0%)
 

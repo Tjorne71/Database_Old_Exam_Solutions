@@ -42,6 +42,26 @@
 
 - Since Q1 and Q2 are well served by a covering index, while Q3 is not, a clustered index on (producerID, year) would be optimal for these three queries. Note that if a covering index on (producerID, title) does not exist, this clustered index is also very effective for Q1.
 
+## March 2022
+
+![Index Selection](images/March2022.png)
+
+5a) Argue for a clustered index for each query, compared to unclustered or no index.
+
+- (Q1) Any index on depth would be covering for the subquery, and should work well for the outer query as well. If more than a small portion of the canals is of the maximum depth, then a clustered index would be useful.
+- (Q2) An index on depth will be covering, so a clustered index would perform the same as an unclustered.
+- (Q3) A clustered index on x would improve performance by 50% over a full scan, and perform much better than an unclustered index.
+
+5b) Argue for a covering index for each query, compared to clustered index.
+
+- (Q1) For the outer query, a covering index on (depth, x, y) would outperform an index on depth alone.
+- (Q2) Any index on depth would be covering and optimal.
+- (Q3) Since whole rows are returned, covering indexes don’t apply here.
+
+5c) Considering all three queries, explain which clustered index would you define.
+
+- Since Q1 and Q2 are well served by covering index, while Q3 is not, a clustered index on x would be optimal for these three queries.
+
 ## December 2021
 
 ![Index Selection](images/December2021.png)

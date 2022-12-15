@@ -34,6 +34,22 @@
 
 - Spark is excellent at processing big data collections, as it can work with distributed storage and run complex computations in a distributed manner. It is not really a data management system, however, as it simply processes data from a file system.
 
+## March 2022
+
+a) Select the correct statements below:
+
+(a) A well-designed relational database can never have incorrect data. (−50%)
+
+(b) Social value can be a significant reason for working with big data. (50%)
+
+(c) Clustering data is generally achieved with one scan of the data collection. (−50%)
+
+(d) Support for ACID transaction properties is generally useless for big data analysis applications. (50%)
+
+b) Some large companies have recently stopped using SSDs for big data applications and reverted to using HDDs. Give arguments for and against such a transition back to HDDs for big data applications.
+
+- SSDs are much more expensive than HDDs, especially when very large storage is required. Since the main access pattern is sequential reads, HDDs are already quite good at that, and multiple HDDs together can serve high throughput. So, using HDDs gives better performance/price ratio.
+
 ## December 2021
 
 **a) Select the correct statements below:**

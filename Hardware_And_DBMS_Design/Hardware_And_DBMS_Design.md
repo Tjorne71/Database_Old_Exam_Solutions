@@ -34,6 +34,22 @@
 
 - In a distributed system with multiple replicas of data items, if the network becomes partitioned, the system cannot both return consistent data (consistency) and return data immediately (availability). Since networks are mostly not partitioned during regular processing, and since the CAP theorem does not explain what to do in this case, the theorem has limited importance.
 
+## March 2022
+
+**a) Select the correct statements below:**
+
+(a) If only old values are logged during updates, durability can still be implemented. (−50%)
+
+(b) Key-value stores excel at joining large relations. (−50%)
+
+(c) SSDs are faster than HDDs, partly because they have no moving parts. (50%)
+
+(d) Support for ACID transaction properties is particularly important for workloads with many small update transactions. (50%)
+
+**b) Discuss pros and cons of using a RAM-based relational database system, compared to an SSD-based system. Be sure to mention both pros and cons. For pros, it is not enough to state that it will be faster, as that is a given, but rather how it could be simpler.**
+
+- Pros: In a RAM-based system, there is no need to wait for disk IO. This means that, for short transactions especially, interleaving execution is less important. Also, persistent logging can be done for durability only, with transient logging for atomicity. Indexes can be tuned for RAM, rather than disk. Cons: Such a system is much more expensive, as RAM is much more expensive than SSDs. Or, alternatively, it can handle much smaller databases.
+
 ## December 2021
 
 **a) Select the correct statements below:Ø**

@@ -64,6 +64,40 @@ _Normalize R to the highest possible normal form (3NF or BCNF), based on functio
 
 - LMN in BCNF, LMO in BCNF, OP in BCNF.
 
+## March 2022
+
+d) Consider a table R(L,M,N,O, P) with the following dependencies:
+
+M → N
+
+O → M
+
+N → P
+
+L → O
+
+![Normalization](images/March2020_1.jpeg)
+
+(a) M is the only (candidate) key of R. (−50%)
+
+(b) O → N is a redundant functional dependency. (50%)
+
+(c) Normalizing to 3NF or BCNF results in exactly two relations. (−50%)
+
+(d) The relation can be normalized to BCNF without losing dependencies. (50%)
+
+**e) Consider a table R(L,M,N,O, P) with the following dependencies:**
+
+LMN → O
+
+O → MP
+
+_Normalize R to the highest possible normal form (3NF or BCNF), based on functional dependencies, while allowing all functional dependencies (excluding trivial, unavoidable, and redundant dependencies) to be checked within a single relation. For each resulting relation, write its columns and clearly indicate whether it is in BCNF._
+
+![Normalization](images/March2020_2.jpeg)
+
+- LMNO in 3NF, OP in BCNF.
+
 ## December 2021
 
 **d) Consider a table R(L,M,N,O, P) with the following dependencies:**
