@@ -683,3 +683,31 @@ create table observes (
 (e) A guest team can have the same name as a registered team. (33:33333%)
 
 (f) No information indicates which team wins each match. (33:33333%)
+
+## March 2019
+
+![Er Diagram](images/March2019.png)
+
+(a) All people are either a member or an enemy. (20%)
+
+(b) The total sponsorship amount for each member can be computed. (20%)
+
+(c) A sponsor can give many sponsorships to the same member. (0%)
+
+(d) A sponsorship can be reviewed by many members. (0%)
+
+(e) A sponsor can choose to give no sponsorships. (0%)
+
+(f) No two children can have the same name. (0%)
+
+(g) An enemy can have at most a single weakness. (0%)
+
+(h) Two enemies can have a weakness with the same name, but with a different description. (20%)
+
+(i) All sponsorships given by a single sponsors must have the same amount. (0%)
+
+(j) A member can review many sponsorships. (20%)
+
+(k) A member can only be part of one committee. (0%)
+
+(l) A sponsor can be linked with at least one committee via the members the sponsor. (20%)

@@ -461,3 +461,19 @@ A --> A
 (b) R is in 3NF but not BCNF (because of the FD: C→A and D→B).
 
 (c) C → A and D → B both cause violations. So decompose into: AC, BCD but this does not preserve AB → C and AB → D, and BCD is still not BCNF because D → B. So we need to decompose further into: AC, BD, CD. However, when we attempt to revive the lost functioanl dependencies by adding ABC and ABD, we that these relations are not in BCNF form. Therefore, there is no BCNF decomposition.
+
+## March 2019
+
+c) Consider a table R(A;B;C;D;E) with the following dependencies:
+
+AB --> C
+
+DE --> E
+
+C --> DE
+
+A --> C
+
+Normalize R to BCNF and write down the resulting relations here:
+
+- R1(A, B), R2(A, C), R3(C, D, E)

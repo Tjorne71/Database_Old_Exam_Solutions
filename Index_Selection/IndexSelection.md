@@ -404,3 +404,121 @@ _Note: Using an index on Calls(callID) or and index on Calls(date) is incorrect,
 (e) Calls(date, duration) (0%)
 
 (f) No index (0%)
+
+## Maj 2019
+
+![Index Selection](images/May2019.png)
+
+**6a) Selection for query 1:**
+
+(a) Person(id) (0%)
+
+(b) Person(birthyear) (0%)
+
+(c) Person(children) (100%)
+
+(d) Person(birthyear, children) (0%)
+
+(e) Person(birthyear, children, name) (0%)
+
+(f) No index (0%)
+
+**6b) Selection for query 2:**
+
+(a) Person(id) (0%)
+
+(b) Person(birthyear) (0%)
+
+(c) Person(children) (100%)
+
+(d) Person(birthyear, children) (0%)
+
+(e) Person(birthyear, children, name) (0%)
+
+(f) No index (0%)
+
+**6c) Selection for query 3:**
+
+(a) Person(id) (0%)
+
+(b) Person(birthyear) (0%)
+
+(c) Person(children) (0%)
+
+(e) Person(birthyear, children, name) (0%)
+
+(f) No index (100%)
+
+**6d) Selection for query 4:**
+
+(a) Person(id) (0%)
+
+(b) Person(birthyear) (0%)
+
+(c) Person(children) (0%)
+
+(d) Person(birthyear, children) (0%)
+
+(e) Person(birthyear, children, name) (100%)
+
+(f) No index (0%)
+
+## March 2019
+
+![Index Selection](images/March2019.png)
+
+**6-1) Selection for Query 1:**
+
+(a) Prof(id) (0%)
+
+(b) Prof(dept id) (0%)
+
+(c) Prof(salary) (0%)
+
+(d) Prof(dept id, salary) (0%)
+
+(e) Prof(dept id, salary, id) (0%)
+
+(f) No index (100%)
+
+**6-2) Selection for Query 2:**
+
+(a) Prof(id) (100%)
+
+(b) Prof(dept id) (0%)
+
+(c) Prof(salary) (0%)
+
+(d) Prof(dept id, salary) (0%)
+
+(e) Prof(dept id, salary, id) (0%)
+
+(f) No index (0%)
+
+**6-3) Selection for Query 3:**
+
+(a) Prof(id) (0%)
+
+(b) Prof(dept id) (0%)
+
+(c) Prof(salary) (0%)
+
+(d) Prof(dept id, salary) (100%)
+
+(e) Prof(dept id, salary, id) (0%)
+
+(f) No index (0%)
+
+**6-4) Selection for Query 4:**
+
+(a) Prof(id) (0%)
+
+(b) Prof(dept id) (0%)
+
+(c) Prof(salary) (0%)
+
+(d) Prof(dept id, salary) (0%)
+
+(e) Prof(dept id, salary, id) (0%)
+
+(f) No index (100%)
